@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Roboto:wght@100&display=swap');
+
+@font-face {
+    font-family: "z003.local";
+    src: url("./Z003.ttf");
+}
+
+div {
+    font-size: 45px;
+    font-weight: 900;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.container {
+    padding: 50px;
+    border: 5px solid red;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 50%;
+}
+
+#div1 {
+    font-family: 'z003.local';
+    /* font-family: z003; */
+}
+
+#div2 {
+    font-family: Kablammo;
+}
+
+#div1a {
+    color: rgb(7, 155, 181);
+}
+
+#div1b {
+    color: rgba(255, 0, 0, 0.2);
+}
+
+#div1c {
+    color: #08b70e;
+}
+
+#div2a {
+    color: hsl(252, 84%, 39%);
+}
+
+#div2b {
+    color: hsla(317, 100%, 57%, 0.381);
+}

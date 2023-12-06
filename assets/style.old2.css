@@ -1,0 +1,28 @@
+p {
+    font-size: 2vw;
+    text-align: center;
+    color: rgb(158, 0, 158);
+    font-weight: bold;
+}
+
+h2 {
+    color: green;
+}
+
+p:hover {   
+    color: black;
+    text-align: right;
+    background-color: turquoise;
+}
+
+h2:hover {
+    color: black;
+    text-align: left;
+    background-color: turquoise;
+}
+
+h1:hover {
+    color: black;
+    text-align: left;
+    background-color: turquoise;
+}
