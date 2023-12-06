@@ -1,4 +1,4 @@
-# [Web Programming Lab Report](https://anolchakraborty.github.io/Web-Programming-Basics/)
+# [Web Programming Lab Journal](https://anolchakraborty.github.io/Web-Programming-Basics/)
 
 [![College Logo](https://i.ibb.co/K7Wwr8w/college-logo.png)](https://jecassam.ac.in/)
 
