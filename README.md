@@ -17,7 +17,8 @@
 
 <br>
 <hr/>
-<div style="break-after:page"></div>
+
+> Click on the respective `Lab Work 0 - -` section to view its web based output
 
 ## Lab Work 001
 
