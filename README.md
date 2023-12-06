@@ -19,7 +19,7 @@
 
 ![powered by](https://img.shields.io/badge/Powered%20By%20Markdown-grey?style=for-the-badge&logo=markdown)
 
-> To view the program source codes in GitHub, [click here](https://github.com/AnolChakraborty/Web-Programming-Basics).
+> To view the web version of this page, [click here](https://github.com/AnolChakraborty/Web-Programming-Basics).
 
 > You can also click the respective  `Lab Work 0--`  of every section to view its output in browser
 
