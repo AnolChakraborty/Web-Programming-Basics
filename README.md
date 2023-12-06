@@ -40,17 +40,17 @@
 
 ***Q5:*** Create a Web Page to show the use of bookmark.
 
-***Q6:*** Create a table in a Web page to show the usage of `<caption\>` tag and use of `colspan`, `rowspan` properties.
+***Q6:*** Create a table in a Web page to show the usage of `<caption>` tag and use of `colspan`, `rowspan` properties.
 
 <hr/>
 
 ## Lab Work 003
 
-***Q1:*** Create a Web Page to demonstrate the following `<form\>` elements:
-- `<fieldset\>` and `<legend\>`
+***Q1:*** Create a Web Page to demonstrate the following `<form>` elements:
+- `<fieldset>` and `<legend>`
 - Input types: `date`, `file` and `color`
-- `<datalist\>`
-- `<optgroup\>`
+- `<datalist>`
+- `<optgroup>`
 	
 ***Q2:*** Create a Web Page to generate a form described below. The form should have the following features:
 - The first two text boxes must not allow input of more than 10 characters.
