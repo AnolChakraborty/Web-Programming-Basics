@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <title>JS Demonstration</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            zoom: 1.4;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Javascript Lab Work</h2>
+    <br>
+    <hr>
+    <br>
+    <li>
+        <label for="first">Usage
+            of&nbsp;&nbsp;&nbsp;<code>prompt()</code>&nbsp;,&nbsp;&nbsp;<code>confirm()</code>&nbsp; &
+            &nbsp;<code>alert()</code>&nbsp;&nbsp;&#8680;&nbsp;</label>
+        <button name="first" onclick="first()">Click me !</button>
+    </li>
+    <br>
+    <li>
+        <label for="second">Check if a given number is poistive or negative or
+            neither(zero)&nbsp;&nbsp;&#8680;&nbsp;</label>
+        <button name="second" onclick="second()">Click me !</button>
+    </li>
+    <br>
+    <li>
+        <label for="third">Check if a given numner is prime or not&nbsp;&nbsp;&#8680;&nbsp;</label>
+        <button name="third" onclick="third()">Click me !</button>
+    </li>
+    <br>
+    <li>
+        <label id="fourth1" for="fourth">Calculate & print first 20 numbers of fibonacci
+            series&nbsp;&nbsp;&#8680;&nbsp;</label>
+        <button id="fourth2" name="fourth" onclick="fourth()">Click me !</button>
+    </li>
+</body>
+
+
+<script>
+    function first() {
+        var1 = prompt("Enter first number", "");
+        var2 = prompt("Enter second number", "");
+
+        if (isNaN(parseFloat(var1)) == 1 || isNaN(parseFloat(var2)) == 1) {
+            alert("Please enter valid number(s) !");
+            return;
+        }
+
+        var3 = confirm("Would you like to add " + var1 + " & " + var2);
+
+        if (var3 == true) {
+            var4 = parseFloat(var1) + parseFloat(var2);
+            alert("The result is : " + var4);
+            return;
+        }
+
+        alert("Thanks !!");
+        return;
+    }
+
+
+    function second() {
+        var1 = prompt("Enter any number", "");
+
+        if (isNaN(parseFloat(var1)) == 0) {
+            if (parseFloat(var1) < 0) {
+                alert("The number is negative");
+            } else if (parseFloat(var1) > 0) {
+                alert("The number is positive");
+            } else {
+                alert("The number equalls zero(0)");
+            }
+            return;
+        }
+        alert("Eneter a valid number !");
+    }
+
+    function third() {
+        var1 = prompt("Enter any number", "");
+        if (isNaN(parseFloat(var1)) == 0) {
+            if (parseFloat(var1) == 1) {
+                alert("1 is neither prime nor composite");
+                return;
+
+            } else if (var1 > 1) {
+                
+                for (i = 2; i < var1; i++) {
+                    if (var1 % i == 0) {
+                        alert(var1 + " is not a prime number");
+                        return;
+                    }
+                }
+                
+                alert(var1 + " is a prime number");
+                return;
+            }
+        }
+
+        alert("Eneter a valid number (greater than 0) !");
+        return;
+    }
+
+
+    function fourth() {
+        let n1 = 0, n2 = 1, nextTerm;
+        var var1 = "";
+        for (let i = 1; i <= 20; i++) {
+            var1 = var1 + " " + n1;
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+        }
+
+        document.getElementById("fourth1").innerHTML = "First 20 numbers of fibonacci series is : <i>" + var1 + "</i>";
+        document.getElementById("fourth2").style.display = 'none';
+
+    }
+</script>
+
+</html>

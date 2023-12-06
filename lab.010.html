@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <title>JS Lab Work</title>
+</head>
+
+<body style="zoom: 1.5; padding: 20px; font-weight: 500; font-size: 15px">
+    <center style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <h2><u>JavaScript Operations on Array, String & Date</u></h2><img width="5%" src="assets/favicon.png">
+    </center>
+    <hr>
+    <p style="font-size: 18px;"><strong>Q1: </strong><i> Create a web page to demonstrate some of the methods of
+            JavaScript arrays (e.g.,
+            concat(),
+            join(), indexOf(), sort(), pop(), push(), etc). </i></p>
+
+    <p><i><u>Array Operation Results :</u></i></p>
+    <div id="results1"></div>
+
+    <hr>
+    <p style="font-size: 18px;"><strong>Q2: </strong><i> Create a web page to demonstrate some of the methods of
+            JavaScript strings (e.g.,
+            charAt(),
+            indexOf(), concat(), match(), replace(), etc).</i></p>
+
+    <p><i><u>String Operation Results :</u></i></p>
+    <div id="results2"></div>
+
+
+    <hr>
+    <p style="font-size: 18px;"><strong>Q3: </strong><i> Create a web page to demonstrate some of the methods of the
+            Date object of JavaScript
+            (eg. getTime(), getMonth(),
+            getDate() etc).</i></p>
+
+    <p><i><u>Date Operation Results :</u></i></p>
+    <div id="results3"></div>
+
+
+    <script>
+        let updateResult = (id, results) => {
+            const resultsDiv = document.getElementById(id);
+            resultsDiv.innerHTML = resultsDiv.innerHTML + '<p>' + results + '</p>';
+        };
+
+        let pcBrands = ['Dell', 'HP', 'Lenovo', 'Acer', 'Asus'];
+
+        updateResult('results1', '1. Original Array: <code>' + pcBrands + '</code>');
+
+        const moreBrands = ['Apple', 'Microsoft'];
+        pcBrands = pcBrands.concat(moreBrands);
+        updateResult('results1', '2. After concat(): <code>' + pcBrands + '</code>');
+
+        updateResult('results1', '3. After join(): <code>' + pcBrands.join(' - ') + '</code>');
+
+        updateResult('results1', '4. Index of "HP": <code>' + pcBrands.indexOf('HP') + '</code>');
+
+        pcBrands.sort();
+        updateResult('results1', '5. After sort(): <code>' + pcBrands + '</code>');
+
+        updateResult('results1', '6. Popped brand: <code>' + pcBrands.pop() + '</code>');
+
+        updateResult('results1', '7. Array after pop(): <code>' + pcBrands + '</code>');
+
+        pcBrands.push('MSI');
+        updateResult('results1', '8. Array after push(): <code>' + pcBrands + '</code>');
+
+        let pcBrandString = "Dell is a popular PC brand known for its quality and performance.";
+
+        updateResult('results2', '1. Original String: <code>' + pcBrandString + '</code>');
+
+        updateResult('results2', '2. Character at index 3: <code>' + pcBrandString.charAt(3) + '</code>');
+
+        updateResult('results2', '3. Index of "quality": <code>' + pcBrandString.indexOf('quality') + '</code>');
+
+        updateResult('results2', '4. After concat(): <code>' + pcBrandString.concat(' It is a reliable choice.') + '</code>');
+
+        const matchedWords = pcBrandString.match(/[\w]+/g);
+        updateResult('results2', '5. Words in the string: <code>' + matchedWords + '</code>');
+
+        updateResult('results2', '6. After replace(): <code>' + pcBrandString.replace('popular', 'renowned') + '</code>');
+
+        updateResult('results2', '7. After toLocaleLowerCase(): <code>' + pcBrandString.toLocaleLowerCase() + '</code>');
+
+        const currentDate = new Date();
+        updateResult('results3', '1. Current Date: <code>' + currentDate + '</code>');
+
+        updateResult('results3', '2. Current Date in UTC format: <code>' + currentDate.toUTCString() + '</code>');
+
+        updateResult('results3', '3. Current Date in Locale: <code>' + currentDate.toLocaleDateString("hi-IN", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + '</code>');
+
+        updateResult('results3', '4. Current Year: <code>' + currentDate.getFullYear() + '</code>');
+
+        updateResult('results3', '5. Current Month (0-11, January is 0): <code>' + currentDate.getMonth() + '</code>');
+
+        updateResult('results3', '6. Current Day of the Month: <code>' + currentDate.getDate() + '</code>');
+
+        updateResult('results3', '7. Current Day of the Week (0-6, Sunday is 0): <code>' + currentDate.getDay() + '</code>');
+
+        updateResult('results3', '8. Current Time in Milliseconds: <code>' + currentDate.getTime() + '</code>');
+
+        const customDate = new Date('2001, 07, 10:15');
+        updateResult('results3', '9. Custom Date: <code>' + customDate + '</code>');
+
+        updateResult('results3', '10. Formatted Custom Date: <code>' + customDate.toDateString() + '</code>');
+    </script>
+</body>
+
+</html>

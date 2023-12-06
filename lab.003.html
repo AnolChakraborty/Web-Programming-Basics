@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.png">  
+  <title>WP Lab</title>
+</head>
+
+<body>
+  <h1>Form Elements Example</h1>
+
+  <form>
+    <fieldset>
+      <legend><i>
+          <h3>Personal Information</h3>
+        </i></legend>
+
+      <!-- Text input with max length -->
+      <label for="input1">First Name (max 10 characters):</label>
+      <input type="text" id="input1" placeholder="Enter First Name" maxlength="10">
+      <br><br>
+      <!-- Text input with max length -->
+      <label for="input2">Second Name (max 10 characters):</label>
+      <input type="text" id="input2" placeholder="Enter Second Name" maxlength="10">
+      <br><br>
+      <!-- Text input with readonly attribute -->
+      <label for="input3">Address (readonly):</label>
+      <input type="text" id="input3" value="Jorhat" readonly>
+      <br>
+      <br>
+      <!-- Date input -->
+      <label for="dateInput">Date:</label>
+      <input type="date" id="dateInput">
+      <br>
+      <br>
+      <!-- File input -->
+      <label for="fileInput">File:</label>
+      <input type="file" id="fileInput">
+      <br><br>
+      <!-- Color input -->
+      <label for="colorInput">Color:</label>
+      <input type="color" id="colorInput" value="#A020F0">
+      <br><br>
+      <!-- Datalist -->
+      <label for="datalistInput">Datalist:</label>
+      <input list="datalistOptions" id="datalistInput">
+      <datalist id="datalistOptions">
+        <option value="Option 1">
+        <option value="Option 2">
+        <option value="Option 3">
+      </datalist>
+      <br><br>
+      <!-- Optgroup -->
+      <label for="optgroupInput">Optgroup:</label>
+      <select id="optgroupInput">
+        <optgroup label="Group 1">
+          <option value="Option 1.1">Option 1.1</option>
+          <option value="Option 1.2">Option 1.2</option>
+        </optgroup>
+        <optgroup label="Group 2">
+          <option value="Option 2.1">Option 2.1</option>
+          <option value="Option 2.2">Option 2.2</option>
+        </optgroup>
+      </select>
+
+    </fieldset>
+  </form>
+</body>
+
+</html>

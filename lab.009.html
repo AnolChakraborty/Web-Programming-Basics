@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <title>JS Lab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            zoom: 1.2;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-right: 800px;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Javascript Lab Work</h2>
+    <br>
+    <hr>
+    <br>
+    <form>
+        <div class="form-group" onsubmit="return false;">
+            <label>First Number :</label>
+            <input style="width: 50%;" type="number" class="form-control" id="num1" placeholder="Enter first number">
+        </div>
+        <div class="form-group">
+            <label>Second Number :</label>
+            <input style="width: 50%;" type="number" class="form-control" id="num2" placeholder="Enter second number">
+        </div>
+
+        <div id="out" class="form-group" style=" display:none;">
+            <label for="outout" class="form-text text-muted">The result is :</label>
+            <input style="width: 50%;" disabled="readonly" type="number" class="form-control" id="output">
+        </div>
+
+        <div class="form-group">
+            <small id="info" class="form-text text-muted">Click on the respective operator button to calculate the relevant
+                operation & <b>AC</b> to clear output</small>
+        </div>
+    </form>
+
+    <button class="btn btn-secondary" onclick="clearInput()">AC</button>
+    <button class="btn btn-primary" onclick="add()">+</button>
+    <button class="btn btn-primary" onclick="subtract()">-</button>
+    <button class="btn btn-primary" onclick="multiply()">*</button>
+    <button class="btn btn-primary" onclick="divide()">/</button>
+
+</body>
+<script>
+    clearInput = () => {
+        document.getElementById("num1").value = ""
+        document.getElementById("num2").value = ""
+        document.getElementById("out").style.display = "none";
+    };
+
+    add = () => {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        if (isNaN(num1) || isNaN(num2)) {
+            alert("Enter two numbers to do this specific operation !");
+            return false;
+        }
+
+        let output = num1 + num2;
+
+        document.getElementById("output").value = output;
+        document.getElementById("out").style.display = "block";
+    };
+
+    subtract = () => {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+
+        if (isNaN(num1) || isNaN(num2)) {
+            alert("Enter two numbers to do this specific operation !");
+            return false;
+        }
+        let output = num1 - num2;
+
+        document.getElementById("output").value = output;
+        document.getElementById("out").style.display = "block";
+    };
+
+    multiply = () => {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+
+        if (isNaN(num1) || isNaN(num2)) {
+            alert("Enter two numbers to do this specific operation !");
+            return false;
+        }
+        let output = num1 * num2;
+
+        document.getElementById("output").value = output;
+        document.getElementById("out").style.display = "block";
+    };
+
+    divide = () => {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+
+        if (isNaN(num1) || isNaN(num2)) {
+            alert("Enter two numbers to do this specific operation !");
+            return false;
+        }
+
+        if (num2 == 0) {
+            alert("Can't divide a number by zero !");
+            return false;
+        }
+        let output = num1 / num2;
+
+        document.getElementById("output").value = output;
+        document.getElementById("out").style.display = "block";
+    }
+
+</script>
+
+</html>

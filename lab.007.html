@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png">
+
+    <title>Lab Work</title>
+    <style>
+        .mydiv span::before {
+            content: "Welcome!";
+        }
+
+        body {
+            padding-left: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* up to 400px */
+        @media (max-width: 400px) {
+            body {
+                background-color: rgb(255, 196, 196);
+            }
+
+            .mydiv span::before {
+                font-size: 20px;
+                content: "Welcome to the extra-small screen!";
+            }
+        }
+
+        /* 401px to 600px */
+        @media (min-width: 401px) and (max-width: 600px) {
+            body {
+                background-color: rgb(255, 236, 196);
+            }
+
+            .mydiv span::before {
+                font-size: 30px;
+                content: "Welcome to the small screen!";
+            }
+        }
+
+        /* 601px to 1024px */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            body {
+                background-color: rgb(196, 255, 196);
+            }
+
+            .mydiv span::before {
+                font-size: 45px;
+                content: "Welcome to the medium screen!";
+            }
+        }
+
+        /* 1025px to 1440px*/
+        @media (min-width: 1025px) and (max-width: 1440px) {
+            body {
+                background-color: rgb(196, 210, 255);
+            }
+
+            .mydiv span::before {
+                font-size: 85px;
+                content: "Welcome to the large screen!";
+            }
+        }
+
+        /* 1441px and above */
+        @media (min-width: 1441px) {
+            body {
+                background-color: rgb(255, 196, 252);
+            }
+
+            .mydiv span::before {
+                font-size: 100px;
+                content: "Welcome to the extra-large screen!";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"><span></span></div>
+    <br>
+    <hr>
+    <br>
+    <div style="font-size: 5vw;">This is non media query text</div>
+</body>
+
+</html>

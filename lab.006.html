@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <title>Lab Work</title>
+    <style>
+        .mydiv {
+            text-align: center;
+            margin: auto;
+            align-items: center;
+            margin-top: 370px;
+        }
+
+        .custom-button {
+            width: 200px;
+            height: 100px;
+            background-color: #2981bb;
+            border: none;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            line-height: 30px;
+            cursor: pointer;
+            transform: translate(0, 0) rotate(0deg) scale(1) skew(0deg);
+            border-radius: 15px;
+            box-shadow: 21px 20px 10px rgba(0, 0, 0, 0.2);
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.712);
+            transition: transform 0.3s, box-shadow 0.3s, text-shadow 0.3s;
+        }
+
+        .custom-button:hover {
+            transform: translate(5px, -5px) rotate(5deg) scale(1.1) skew(10deg);
+            box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.3);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .custom-button:active {
+            color: red;
+            background-color: cadetblue;
+            transform: translate(0, 0) rotate(70deg) scale(10) skew(0deg);
+        }
+
+        .anime {
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.74);
+            width: 100px;
+            height: 50px;
+            background-color: rgba(247, 0, 255, 0.63);
+            position: relative;
+            animation-name: frames;
+            animation-duration: 15s;
+            animation-delay: 0s;
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes frames {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 100%;
+                top: 0;
+            }
+
+            50% {
+                background-color: blue;
+                left: 900px;
+                top: 900px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 0px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0%;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="anime"></div>
+    <div class="mydiv">
+        <button class="custom-button">I'm a button, please click me</button>
+    </div>
+</body>
+
+</html>
