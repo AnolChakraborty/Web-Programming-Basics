@@ -21,7 +21,7 @@
 
 > To view the program source codes in GitHub, [click here](https://github.com/AnolChakraborty/Web-Programming-Basics).
 
-> You can also click the respective  `Lab Work 0 - -`  of every section to view its output in browser
+> You can also click the respective  `Lab Work 0--`  of every section to view its output in browser
 
 <hr/>
 
