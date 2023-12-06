@@ -1,7 +1,9 @@
 # <center>Web Programming Lab Report</center>
+
 [![College Logo](https://github.com/AnolChakraborty/Web-Programming-Basics/blob/main/assets/college%20logo.png?raw=true)](https://jecassam.ac.in/)
 
 <hr/>
+<br>
 
 ## Submitted By:
 
@@ -13,8 +15,8 @@
 ||***Course***|:|*B.Tech CSE*|
 ||**----------**|**---**|**------------------------**|
 
+<br>
 <hr/>
-
 <div style="break-after:page"></div>
 
 ## Lab Work 001
