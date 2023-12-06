@@ -1,5 +1,5 @@
 # <center>Web Programming Lab Report</center>
-[![College Logo](https://jecassam.ac.in/adexmis/assets/img/logo-final.png)](https://jecassam.ac.in/)
+[![College Logo](https://github.com/AnolChakraborty/Web-Programming-Basics/blob/main/assets/college%20logo.png?raw=true)](https://jecassam.ac.in/)
 
 <hr/>
 
